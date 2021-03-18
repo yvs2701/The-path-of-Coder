@@ -1,0 +1,213 @@
+*{margin:0;}
+body{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+.top{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+    background-image:url("https://images.hdqwalls.com/download/i-love-coding-xl-1600x900.jpg");
+    /* background-color: lightgrey; */
+    /* background-blend-mode: darken; not in use now earlier there was a different photo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.burger{
+    display:none;
+}
+.line{
+    display: none;
+}
+.top>span{
+    position:relative;
+    top:75vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 2em;
+}
+.top>span>h3 , .top>span>p{
+    padding:2px;
+}
+.top>nav{
+    width:100vw;
+    position: fixed;
+    background-color: rgb(52, 58, 64);
+    display: flex;
+}
+.top>nav>div{
+    display: flex;
+    width:50vw;
+}
+.top>nav>span{
+    display:flex ;
+    align-items:center;
+    justify-content: flex-end;
+    position: relative;
+    width:50vw;
+    right:84px;
+}
+.top>nav>span>input{
+    border: 1px solid green;
+    height:2em;
+    border-radius: 5px;
+    margin-right: 1em;
+    background-color:rgb(82, 88, 94,0.8) ;
+    color:whitesmoke;
+}
+.top>nav>span>submit{
+    background-color: transparent;
+    color:green;
+    border:2px solid green;
+    border-radius:5px;
+    padding:3px;
+    font-size: 1em;
+}
+.top>nav>span>submit:hover{
+    cursor:pointer;
+    color:darkgreen;
+    border-color: darkgreen;
+}
+.top>nav>span>input:focus{ /*so that out input field doesn't cahnge its outline style to black and white on focus*/
+    outline-width: 0;
+    box-shadow: 0px 0px 1px 1px green ;
+}
+.top>nav>div>li{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style-type:none;
+    padding: 1em;
+}
+.top>nav>div>li>a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: rgba(255,255,255,0.8);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.top>nav>div>li>a:hover{
+    color:lightgrey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#active{
+    font-size: 2em;
+    color:rgb(255,255,255)
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:100vw;
+    margin:0;
+    margin-top: 1em;
+    background-color: white;
+}
+.container>span{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding:50px;
+    max-width:216px;
+    /*wdith is not used as when flex direction may change even then it will not min width ensures the width to adjust properly*/
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 21px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 2px lightgrey , 0 0 2px 1px rgba(211, 211, 211, 0.8);
+}
+@media only screen and (max-width:1008px){
+    .container{
+        display:flex;
+        flex-direction:column;
+        position: relative;
+        margin:0;
+        margin-top: 1em;
+    }
+    /* if this was not done then too the site was fine but scroll bars appeared because of the margins and padding ofthe cards after doing this i defined explicitly where to change the style */
+    .top{
+        width:100vw;
+    }
+    .top>nav{
+        height:40vh;
+        width:100vw;
+        background-color: rgba(52, 58, 64, 0.5);
+        transition: all 0.2s ease;
+        display: flex;
+    }
+    .top>nav>*>*{
+        margin-top:1em;
+    }
+    .top>nav , .top>nav>div {
+        flex-direction:column;
+        justify-content: centre;
+        align-items: center;
+    }
+    .top>nav>span{
+        display:flex;
+        right:0;
+        flex-direction: column;
+        margin-bottom:5px;
+    }
+    .top>nav>span>input, .top>nav>span>sumbit{
+        margin:0;
+        margin-bottom: 2px;
+    }
+    .burger{
+        position:absolute;
+        top:3em;
+        right:2em;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:35px;
+        height:35px;
+        border:2px solid white;
+        border-radius:5px;
+        background-color: transparent;
+        text-align: center;
+        padding:0;
+        z-index: 1;
+    }
+    .bruger:hover{
+        cursor:pointer;
+        border:2px whitesmoke solid;
+    }
+    .line:nth-child(1){
+        display: block;
+        position:relative;
+        height: 1px;
+        width:18px;
+        background-color: white;
+        margin:2px;
+    }
+    .line:nth-child(2){
+        display: block;
+        position:relative;
+        height: 1px;
+        width:18px;
+        background-color: white;
+        margin:2px;
+    }
+    .line:nth-child(3){
+        display: block;
+        position:relative;
+        height: 1px;
+        width:18px;
+        background-color: white;
+        margin:2px;
+    }
+    .close{
+        opacity:0;
+        pointer-events: none; /*display none wasnt working because of the above specifies rules so we need to make links un-clickable and unselectable*/
+    }
+}
