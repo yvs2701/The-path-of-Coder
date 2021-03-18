@@ -1,0 +1,90 @@
+body{
+margin-left:20%;
+margin-right: 20%;
+background-color:rgba(255,192,200,0.6); /*lighter pink*/
+color:red;
+}
+input{
+    background-color:rgba(255,192,200,0.4);
+    color:rgba(255,0,0,0.5);
+    border-width:1px;
+    border-color:rgba(255,0,0,0.6);
+    border-radius:5px;
+}
+input::placeholder{
+    color:red;
+    opacity:30%;
+}
+input:hover{
+    border-radius: 10px;
+    border-color:rgba(255,0,0,1);
+}
+input::selection{
+    background-color:deeppink;
+    color:white; 
+}
+#mylist{word-wrap:break-word;}
+#add{ 
+color:white;
+background-color:rgba(255,0,0,0.8);
+border-color:rgba(255,0,0,0.6);
+border-radius:7px;
+border-width:1px;
+cursor: pointer;
+}
+#add:hover{
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 2px lightgray;
+}
+#add::selection{
+    background-color:deeppink;
+    color:white; 
+}
+#clean{
+    color:red;
+background-color:rgba(255,192,200,0.6);
+border-color:rgba(255,0,0,0.6);
+border-radius:7px;
+border-width:1px;
+cursor: pointer;
+}
+#clean:hover{
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 2px lightgray;
+}
+#clean::selection{
+    background-color:deeppink;
+    color:white; 
+}
+h1 {
+    color: rgba(255,0,0,0.8);
+    text-decoration:underline;
+}
+h1::selection{
+    background-color:black;
+    color:white;
+}
+h5{
+    color:red;
+    font-style:italic;
+    font-weight:lighter;
+    text-align:right;
+}
+h5::selection{
+    background-color: black;
+    color:white;
+}
+.del{
+    margin-left: 5px;
+    background-color: transparent ;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+.tick{
+    margin-left:5px;
+    background-color:transparent ;
+    color:green;
+    border:none;
+    cursor:pointer;
+}
