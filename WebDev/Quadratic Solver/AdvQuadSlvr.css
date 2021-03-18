@@ -1,0 +1,135 @@
+html{
+    overflow:hide;
+    background-color:rgb(250,250,250);
+}
+body{
+    position: absolute;
+    width:60%;
+    background-color:white;
+    padding-bottom:1em;
+    overflow:hide;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#eqn{  
+    text-align: center;
+    margin-top:2em;
+    margin-bottom:1em ;
+    background-color:rgb(245,245,245);
+    font-size:4em;
+    font-family: 'Dancing Script', cursive;
+    height:3em;
+    overflow:hide;
+}
+sup{
+    font-size:0.5em;
+}
+input{
+    font-family: 'Dancing Script', cursive;
+    background-color:white;
+    margin-right:0.1em;
+    margin-top:2.5em;
+    width:2em;
+    height:2em;
+    border:0;
+    border-bottom:0.1em solid black;
+    text-align:center;
+    padding:0.5px;
+    font-size:25px;
+}
+input:focus
+{
+box-shadow:0 0 0.1em 0.02em orange;
+}
+.sign{
+    overflow-x:scroll;
+    background-color:white;
+    margin:0.08em;
+    margin-top:1em;
+    width:1em;
+    height:1em;
+    border:0;
+    border-bottom:0.1em solid black;
+    text-align:center;
+    padding:0.5px;
+    font-size:25px;
+    font-family:"cursive";
+    
+}
+#submit{
+    float:left;
+    font-size:20px;
+    margin:0.1em;
+    margin-top:1em;
+    background-color:rgb(25,100,255);
+    color:white;
+    width:5.2em;
+    height:2.4em;
+    padding:0.08em;
+    text-align:center ;
+    border:0.1em solid rgba(25,100,255,0.4);
+    border-radius:0.4em;
+    background-clip:content-box;
+    font-family:"sans-serif";
+}
+#submit{cursor:pointer;}
+#clear{
+    float:right;
+    font-size:20px;
+    margin:0.1em;
+    margin-top:1em;
+    background-color:rgb(25,100,255);
+    color:white;
+    width:5.2em;
+    height:2.4em;
+    padding:0.08em;
+    text-align:center ;
+    border:0.1em solid rgba(25,100,255,0.4);
+    border-radius:0.4em;
+    background-clip:content-box;
+    font-family:"sans-serif";
+}
+#clear{cursor:pointer;}
+#features{
+    font-size:20px;
+    margin:0.1em;
+    margin-top:7em;
+    position:absolute;
+    left:42%;
+    background-color:rgb(25,100,255);
+    color:white;
+    width:5.2em;
+    height:2.4em;
+    padding:0.08em;
+    text-align:center ;
+    border:0.1em solid rgba(25,100,255,0.4);
+    border-radius:0.4em;
+    background-clip:content-box;
+    font-family:"sans-serif";
+}
+#features{cursor:pointer;}
+p{
+    margin-top:19em;
+    margin-bottom:0;
+    color:grey;
+}
+ul{
+    margin-left:-1em;
+    margin-top:-0.5em;
+}
+h2{
+    display:inline-block ;
+    margin:0;
+    margin-top:0.2em;
+    text-decoration:underline ;
+    font-size:2.5em ;
+}
+h5{ font-size: 1em;
+    float:right;
+    display:inline-block ;
+    margin:0;
+    margin-left:0.2em;
+    margin-top:2em;
+    color:grey;
+    text-decoration:underline wavy;
+}
