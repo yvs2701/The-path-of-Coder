@@ -1,0 +1,90 @@
+body{
+    position:absolute;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLtifnrKFdD_BpaWAX5b61rFGveaVq8EOscw&usqp=CAU);
+    background-repeat: no-repeat;
+    z-index:0;
+    background-color:rgb(202,164,114);
+}
+div.one{
+position:relative ;
+height:400px;
+width:250px;
+margin-left:45px;
+top:70px;
+border:1px solid black; 
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQN_lq2vNkk3bvnpXFDFe9FGk07BfProm5bhw&usqp=CAU);
+background-repeat:no-repeat ;
+box-shadow: 2px 2px 5px grey inset;
+z-index:1;
+}
+.wrapper{
+    position:relative ;
+    height:65%;
+    width:80%;
+    border:2px solid red;
+    margin-top:60px;
+    box-shadow: 1px -2px 3px grey;
+}
+button{cursor:pointer;}
+.rules{ 
+    position:absolute;
+    top:5px;
+    left:125px;
+    height:40px;
+    width:100px;
+    border:2px solid black;
+    border-radius: 10%;
+    padding:3px;
+    background-clip:content-box ;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+}
+.rules:hover{
+    font-size: 1.05em;
+    background-color: white;
+    border-color: white;
+    border-radius: 15%;
+    color: black;
+}
+.btn{
+    position:relative;
+    margin:30px;
+    margin-top:20px;
+    border:2px solid;
+    border-radius:40%;
+    font-weight:bolder;
+    padding:10px;
+    background-color:transparent;
+    border-color:green;
+    color:green;
+    box-shadow: 0 0 20px lightgreen inset, 1px 0px 2px grey;
+}
+.btn:hover{
+    font-size:1em;
+}
+.red{
+    color:red;
+    border-color:red;
+    box-shadow: 0px 0px 20px pink inset, 1px 0px 3px grey;
+}
+.win{
+position:relative ;
+left:22px;
+top:110px;
+padding:2px;
+ height:150px;
+ width:300px;
+  border:3px dashed;
+ background-color:black;
+ border-color:white;
+ border-radius:10px;
+}
+h1{position:relative ;
+    color:lightgreen;
+}
+h3{
+position:relative ;
+top:20px;
+color:yellow;
+}
