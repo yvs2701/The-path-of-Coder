@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 /* This program mimics python string concatenation using '*' and to some extent print function as well (needs to be refined)*/
 //defining our class for 'string'
@@ -12,7 +13,8 @@ class String{
     }
 
     void readline(){
-        getline(cin,str);
+        getline(cin,str); 
+        // we dont require to use string for getline as it is also included in the istream header (which is again included in the iostream)
     }
     void print()
     {
@@ -40,6 +42,15 @@ class String{
     }
 };
 
+string operator*(string str, int n) // for concatenating string without using our String class object
+{
+    string s;
+    while(n--){
+        s+=str;
+    }
+    return s;
+}
+
 int main(){
     String s,copy;
     s.readline();
@@ -50,6 +61,9 @@ int main(){
     cout<<"Now the equivalent function: ";
     s = s.concat(3);
     s.print();
+
+    string str = "Another string";
+    cout<<"\n"<<str*5;
 
     return 0;
 }
