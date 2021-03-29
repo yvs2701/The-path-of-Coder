@@ -6,7 +6,7 @@ so we will use a nullptr*/
 
 class linkedList
 {
-public:
+public:               // since everygting is public we could've used a struct
     int data;         // stores the value of that link/node/element
     linkedList *next; //stores the memory address of the next linkedList in the list
 
@@ -22,7 +22,7 @@ public:
     }
     ~linkedList()
     {
-        cout << "\nNode/Linked-list deleted\n"; // destructor will be called whenever a node is deleted
+        cout << "Node/Linked-list deleted\n"; // destructor will be called whenever a node is deleted
         // when program end then too it will be executed as the linked list in the main() will go out of scope (and will be deleted)
     }
 };
@@ -37,6 +37,18 @@ void print(linkedList *head, string sep = " ") //here we took head by value as w
         head = head->next;         // ptr is updated to pointer of the next node (which points to next to next node)
     }
     cout << sep << head->data << endl;
+}
+
+int len(linkedList * head){
+    int length = 0;
+    linkedList *ptr = head;
+    while(head->next != nullptr){
+        length++;
+        head = head->next;
+    }
+    // at the last node while loop will break thereby not updating the length
+    length++; // so we will do it for the last node
+    return length;
 }
 
 void insert(linkedList *&head, int index, int d)
@@ -102,6 +114,10 @@ void delTail(linkedList *&head)
 }
 void del(linkedList *&head, int index)
 {
+    if (index >= len(head)){
+        cout<<"indexOutOfBounds\n";
+        // throw "indexOutOfBounds\n"
+    }
     if (head == NULL) //list has no elements
     {
         return; //do nothing
@@ -148,6 +164,8 @@ int indexOf(linkedList *head, int search) //returns index of first occurence of 
 
 int main()
 {
+    /* since many operations require shifting the a node to next or previous which are stored in the pointers therefore we have 
+    to declare the head as a pointer as well and due to this we need to change the arguments in every function to pointers as well*/
     linkedList *ll = new linkedList();
     /* can also be written as class linkedList * ll = (class linkedList*)malloc(sizeof(class linkedList))
     this is simply a type converion this statement meant:- allocate memory(malloc) in heap of the size of a class linkedList to a linkedList pointer*/
@@ -161,10 +179,10 @@ int main()
     prepend(ll, 5);   // 5->1->3->4->0->2->-1->null
     print(ll, " -> ");
     cout << "6 is in the list? " << indexOf(ll, 6) << "\n"; // earlier I made a search function but doesn't matter indexOf will do the job too
-    cout << "2 is at the " << indexOf(ll, 2) << "th index"
-         << "\n"; //index = 5
+    cout << "2 is at the " << indexOf(ll, 2) << "th index" << "\n"; //index = 5
     del(ll, 0);   //delete at 0th index i.e. 5 (head)
     del(ll, 3);   //delete at 3rd index i.e. 0
+    cout<<"Length of this list is: "<<len(ll)<<"\n";
     print(ll, " => ");
     return 0;
 }
