@@ -44,7 +44,7 @@ class String{
 
 string operator*(string str, int n) // for concatenating string without using our String class object
 {
-    string s;
+    string s="";
     while(n--){
         s+=str;
     }
