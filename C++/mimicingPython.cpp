@@ -51,6 +51,13 @@ string operator*(string str, int n) // for concatenating string without using ou
     return s;
 }
 
+string input(string str="") //output str and takes input (entire line) and returns it in the form of a string
+{
+    cout<< "\n" <<str<<" ";
+    getline(cin,str); // reads the entire line
+    return str;
+}
+
 int main(){
     String s,copy;
     s.readline();
@@ -64,6 +71,8 @@ int main(){
 
     string str = "Another string";
     cout<<"\n"<<str*5;
+
+    input("Press enter to continue...");
 
     return 0;
 }
