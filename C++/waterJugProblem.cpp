@@ -1,4 +1,4 @@
-/* You have 2 jug witch capacities x and y ( > x). Goal is to measure z amount of water using these 2 jugs.
+/* You have 2 jugs with capacities x and y ( > x). Goal is to measure z amount of water using these 2 jugs.
 
 Algorithm / Code structure:
 - Transfer water from one jug to another.
