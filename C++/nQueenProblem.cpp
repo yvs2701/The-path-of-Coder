@@ -63,10 +63,10 @@ int main()
     cout << "Solve the n-queen problem for how many queens ? ";
     int n;
     cin >> n;
-    int** board = new int*[n];
+    int** board = new int*[n]; // allot memory = (int * n) = for n integers or rows
 
     for (int i = 0; i < n; i++)
-        board[i] = new int[n];
+        board[i] = new int[n]; // allot memory = (int * n) = for n integers in a row
 
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
