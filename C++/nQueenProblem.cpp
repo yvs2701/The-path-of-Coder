@@ -74,7 +74,7 @@ int main()
     bool possible = nQueen(board, 0, n);
 
     if(possible)
-        cout << "Soltuion possible :)";
+        cout << "Solution possible :)";
     else
         cout << "Solution not possible :(";
     return 0;
