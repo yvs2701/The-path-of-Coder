@@ -1,4 +1,5 @@
 #from think python book, same code can be applied for factorial
+#later on I discovered there's nothing so smart about this, it is just a part of DP :(
 def classicalFib(n=0): #this has a default parameter just in case the user is stupid :/
     if n==0:
         return 0
