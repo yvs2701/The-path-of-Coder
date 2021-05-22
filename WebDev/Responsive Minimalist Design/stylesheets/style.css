@@ -16,6 +16,7 @@ body{
 }
 .burger{
     display:none;
+    z-index: 2;
 }
 .line{
     display: none;
@@ -36,8 +37,9 @@ body{
 .top>nav{
     width:100vw;
     position: fixed;
-    background-color: rgb(52, 58, 64);
+    background-color: rgb(46, 51, 56);
     display: flex;
+    z-index: 1;
 }
 .top>nav>div{
     display: flex;
@@ -135,20 +137,26 @@ body{
     /* if this was not done then too the site was fine but scroll bars appeared because of the margins and padding ofthe cards after doing this i defined explicitly where to change the style */
     .top{
         width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .top>nav{
-        height:40vh;
-        width:100vw;
+        height:100vh;
         background-color: rgba(52, 58, 64, 0.5);
         transition: all 0.2s ease;
         display: flex;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        -moz-backdrop-filter: blur(8px);
+        -o-backdrop-filter: blur(8px);
     }
     .top>nav>*>*{
         margin-top:1em;
     }
     .top>nav , .top>nav>div {
         flex-direction:column;
-        justify-content: centre;
+        justify-content: center;
         align-items: center;
     }
     .top>nav>span{
@@ -176,7 +184,7 @@ body{
         background-color: transparent;
         text-align: center;
         padding:0;
-        z-index: 1;
+        z-index: 2;
     }
     .bruger:hover{
         cursor:pointer;

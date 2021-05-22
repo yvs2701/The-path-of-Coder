@@ -17,9 +17,9 @@
     <div class="top">
         <nav>
             <div>
-                <li ><a href="index.html">Home</a></li>
-                <li><a href="About.html">sAbout</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
+                <li ><a href="/">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="/Contact.html">Contact Us</a></li>
             </div>
             <span>
                 <input type="search" name="search" placeholder="Node.js tutorials" id="search">
@@ -66,14 +66,15 @@
 </body>
 <script>
     function classtoggle(){
-        nav=document.getElementsByTagName('nav')[0]
+        nav=document.getElementsByTagName('nav')[0];
         nav.classList.toggle("close");
         setTimeout(()=>{
-            if(nav.hasClass('close'))
+            if(nav.classList.contains('close'))
             nav.style.display="hide";
             else
             nav.style.display="flex";
         },510);
     }
+    classtoggle();
 </script>
 </html>
