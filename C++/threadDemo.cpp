@@ -28,5 +28,5 @@ int main()
     return 0;
 }
 
-/*To COMPILE this program on windows you need to add -lpthread option while compiling:
+/*To COMPILE this program on linux you need to add -lpthread option while compiling:
     `g++ -o output threadDemo.cpp -lpthread` */
