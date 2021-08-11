@@ -39,7 +39,7 @@ void print(linkedList *head, string sep = " ") //here we took head by value as w
     cout << sep << head->data << endl;
 }
 
-int len(linkedList * head){
+int len(linkedList *head){
     int length = 0;
     linkedList *ptr = head;
     while(head->next != nullptr){
@@ -164,8 +164,6 @@ int indexOf(linkedList *head, int search) //returns index of first occurence of 
 
 int main()
 {
-    /* since many operations require shifting the a node to next or previous which are stored in the pointers therefore we have 
-    to declare the head as a pointer as well and due to this we need to change the arguments in every function to pointers as well*/
     linkedList *ll = new linkedList();
     /* can also be written as class linkedList * ll = (class linkedList*)malloc(sizeof(class linkedList))
     this is simply a type converion this statement meant:- allocate memory(malloc) in heap of the size of a class linkedList to a linkedList pointer*/
