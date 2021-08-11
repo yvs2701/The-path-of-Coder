@@ -12,7 +12,7 @@ public:               // since everygting is public we could've used a struct
 
     linkedList()
     {
-        data = NULL;
+        data = 0; // earlier I assigned data = NULL; but due to compiler warnings I became a good guy :)
         next = nullptr;
     }
     linkedList(int d)
