@@ -162,6 +162,24 @@ int indexOf(linkedList *head, int search) //returns index of first occurence of 
     return -1; //not found
 }
 
+void reverse(linkedList *&head) // reverses the linkedlist in O(n)
+{
+    // we recieved head via reference so we changes shall reflect everywhere
+    linkedList *prev = nullptr; // use NULL for earlier versions of C++
+    linkedList *current;
+
+    while(head != nullptr)
+    {
+        current = head;
+
+        head = head->next;
+        current->next = prev;
+
+        prev = current;
+    }
+    head = current;
+}
+
 int main()
 {
     linkedList *ll = new linkedList();
@@ -182,5 +200,7 @@ int main()
     del(ll, 3);   //delete at 3rd index i.e. 0
     cout<<"Length of this list is: "<<len(ll)<<"\n";
     print(ll, " => ");
+    reverse(ll); // reverse a list
+    print(ll, " <- ");
     return 0;
 }
