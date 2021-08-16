@@ -177,7 +177,7 @@ void reverse(linkedList *&head) // reverses the linkedlist in O(n)
 
         prev = current;
     }
-    // since head = nullptr right now we shall set it back to current (which is )
+    // since head = nullptr right now we shall set it back to current (which is pointing to the last node)
     head = current;
 }
 
