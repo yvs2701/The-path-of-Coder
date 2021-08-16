@@ -164,7 +164,7 @@ int indexOf(linkedList *head, int search) //returns index of first occurence of 
 
 void reverse(linkedList *&head) // reverses the linkedlist in O(n)
 {
-    // we recieved head via reference so we changes shall reflect everywhere
+    // we recieved head via reference so changes shall reflect everywhere
     linkedList *prev = nullptr; // use NULL for earlier versions of C++
     linkedList *current;
 
@@ -177,6 +177,7 @@ void reverse(linkedList *&head) // reverses the linkedlist in O(n)
 
         prev = current;
     }
+    // since head = nullptr right now we shall set it back to current (which is )
     head = current;
 }
 
