@@ -7,12 +7,12 @@ so we will use a nullptr*/
 class linkedList
 {
 public:               // since everygting is public we could've used a struct
-    int data;         // stores the value of that link/node/element
+    int data;         // stores the value of that link/node
     linkedList *next; //stores the memory address of the next linkedList in the list
 
     linkedList()
     {
-        data = 0; // earlier I assigned data = NULL; but due to compiler warnings I became a good guy :)
+        data = 0;
         next = nullptr;
     }
     linkedList(int d)
@@ -31,6 +31,8 @@ void print(linkedList *head, string sep = " ") //here we took head by value as w
 {
     cout << head->data;
     head = head->next;
+    if (head == nullptr)
+        return;
     while (head->next != nullptr)
     {
         cout << sep << head->data; // separator between two couts
@@ -60,7 +62,7 @@ void insert(linkedList *&head, int index, int d)
     while (index--)
     {
         if (ptr->next != nullptr)
-            ptr = ptr->next; //navigating to the link/node/element at that index
+            ptr = ptr->next; //navigating to the link/node at that index
         else
         {
             cout << "indexOutOfBounds\n";
@@ -69,15 +71,15 @@ void insert(linkedList *&head, int index, int d)
         }
     }
 
-    linkedList *newNode = new linkedList(d); // creating a new link/node/element
-    newNode->next = ptr->next;               // (since we were one index before waht is given to us)
+    linkedList *newNode = new linkedList(d); // creating a new link/node
+    newNode->next = ptr->next;               // (since we were one index before what is given to us)
     ptr->next = newNode;
 }
 void append(linkedList *&head, int d) //insert at the end
 {
     if (head == NULL) //when we have an empty list
     {
-        head = new linkedList(d); //then we directly assign head to this new link/element/node
+        head = new linkedList(d); //then we directly assign head to this new link/node
         return;                   //return after doing the work
     }
 
@@ -106,6 +108,10 @@ void delHead(linkedList *&head)
 void delTail(linkedList *&head)
 {
     linkedList *ptr = head;
+    if (ptr == nullptr)
+        return;
+    if (ptr->next == nullptr)
+        cout << "noElementsAhead\n";
     while (ptr->next->next != nullptr) //one node before the tail
     {
         ptr = ptr->next;
@@ -116,14 +122,10 @@ void delTail(linkedList *&head)
 }
 void del(linkedList *&head, int index)
 {
-    if (index >= len(head)){
+    if (index >= len(head))
         cout<<"indexOutOfBounds\n";
-        // throw "indexOutOfBounds\n"
-    }
-    if (head == NULL) //list has no elements
-    {
-        return; //do nothing
-    }
+    if (head == nullptr)            //list has no elements
+        return;                     //do nothing
     else if (head->next == nullptr) //we are at head with no elements after
     {
         delHead(head);
@@ -136,19 +138,47 @@ void del(linkedList *&head, int index)
         delHead(head);
         return;
     }
+    
     index -= 1; // first getting the node just before the one to delete
     while (index--)
-    {
         ptr = ptr->next;
-    }
-    if (ptr->next->next == nullptr) //then we got to the tail
+    if (ptr->next == nullptr) // i.e. index was 1 and total elements were only 2 (incl head)
     {
-        delTail(head);
+        // so we need to delete an element after head
+        linkedList *toDelete = head->next;
+        head->next = nullptr; // anyways head->next->next = nullptr
+        delete toDelete;
+        return;
     }
 
     linkedList *toDelete = ptr->next; //store the value at the next node (whose address was given)
     ptr->next = ptr->next->next;
     delete toDelete; //deleting the waste node from the memory
+}
+
+void deleteMafterN(linkedList* head, int n, int m)
+{
+    /* deleted n nodes after every m nodes */
+    int counter = 1;
+    // head has to be counted anyways
+    while(head != nullptr)
+    {
+        if (counter == m)
+        {
+            counter = n;
+            while (counter > 0 && head->next != nullptr)
+            {
+                // we are at the same mth node
+                // delete the next node
+                del(head, 1);
+                counter--;
+            }
+            counter = 1;
+            // since the way we are counting head will shift one step ahead already
+            // when we realise that counter = m !!!
+        } else counter++;
+        head = head->next;
+    }
 }
 
 int indexOf(linkedList *head, int search) //returns index of first occurence of search item
@@ -179,8 +209,151 @@ void reverse(linkedList *&head) // reverses the linkedlist in O(n)
 
         prev = current;
     }
-    // since head = nullptr right now we shall set it back to current (which is pointing to the last node)
+    // since head = nullptr right now we shall set it back to current(which is pointing to the last node)
     head = current;
+}
+
+bool isPalindrome(linkedList *head) // checks if the list is palindrome
+{
+    // IF THE LIST IS PALINDROME THEN THE RIGHT HALF OF THE LIST
+    // SHALL BE THE OPPOSITE SEQUENCE OF THE LEFT HALF !
+    // IF WE REVERSE ANY ONE OF THE HALVES
+    // THE THEY SHOULD BE IDENTICAL
+    int length = len(head);
+    linkedList *rightHalf = head;
+
+    if (length & 1) // C++ considers 0 as false
+    {
+        // if Number is odd "Number & 1" will give 1 otherwise 0
+        // we arrived inside this block, which means the length was odd
+        length = length / 2;
+
+        // navigating to the middle
+        while (length--)
+        {
+            rightHalf = rightHalf->next;
+        }
+        rightHalf = rightHalf->next; // now we are at the beginning of the right half
+        // since the length was odd
+        // we wont compre the middle element by itself
+        // we will compare the left half and right half
+    }
+    else
+    {
+        // we didn't make it to previous block, which means the length was even
+        length = length / 2;
+
+        // navigating to the middle
+        while (length--)
+        {
+            rightHalf = rightHalf->next;
+        }
+        // now we are at the beginning of the right half
+    }
+    reverse(rightHalf);
+    // now rightHalf pointer is pointing at the end of the list
+    // and the end of the left half is still connected to the head of right
+    // but the head of right shall now be pointing to NULL
+
+    // if the length was odd then rightHalf shall reach the NULL
+    // and head will be at the middle (before splitting) of the list
+    
+    linkedList *ptr = rightHalf; 
+    // we have to preserve rightHalf to again correct the list as it was before reversing the right half !
+    while (ptr != nullptr)
+    {
+        if (ptr->data != head->data)
+        {
+            reverse(rightHalf); // all nodes fixed back
+            return false;
+        }
+        head = head->next;
+        ptr = ptr->next;
+    }
+    reverse(rightHalf); // all nodes fixed back
+    return true;
+}
+
+void sort_list(linkedList* head)
+{
+    linkedList *ptr;
+    int sortTill = len(head);
+
+    /* bubble sort */
+
+    // we can't use head == nullptr and inside the loop head = head->next
+    // since here I'm sorting in such a way greatest element goes to the bottom
+    // however in approach where lowest element rises upwards there we could've used it
+    while (sortTill--)
+    {
+        ptr = head;
+
+        // in bubble sort we know iner loop runs outer - 1
+        // but we have alread did sortTill-- i.e. by now it is already -1
+        // so we don't have to write it again here
+        int runFor = sortTill; // inner loop shall run for these many times
+
+        // while ptr is not null pointer and sort till doesn't turn to 0
+        while (runFor > 0)
+        {
+            // if ptr->next is null pointer then this condition will throw
+            // segmentation fault error
+            if (ptr->data > ptr->next->data)
+                std::swap(ptr->data, ptr->next->data);
+            ptr = ptr->next;
+            runFor--;
+        }
+    }
+}
+
+linkedList* splitAlternate(linkedList *head)
+{
+    if (head == nullptr || head->next == nullptr)
+        return nullptr;
+
+    linkedList* second_head = head->next;
+    linkedList* ptr = second_head; // for traversing
+
+    while(head != nullptr && head->next != nullptr && ptr != nullptr && ptr->next != nullptr)
+    {
+        head->next = head->next->next; head = head->next;
+        // head should be updated before the second head always !
+        ptr->next = ptr->next->next; ptr = ptr->next;
+    }
+    while(head != nullptr && head->next != nullptr)
+    {
+        head->next = head->next->next;
+        head = head->next;
+    }
+    while(ptr != nullptr && ptr->next != nullptr)
+    {
+        ptr->next = ptr->next->next;
+        ptr = ptr->next;
+    }
+    return second_head;
+}
+
+void removeDup(linkedList* node)
+{
+    while(node->next != nullptr)
+    {
+        linkedList *ptr = node;
+        while(true)
+        {
+            if (ptr->next == nullptr)
+                break;
+            if (node->data == ptr->next->data)
+                del(ptr, 1); // delete the element after this link/node pointer
+            // since this is passed to be the head of the list it would be treated as index 0 in del function
+            else
+            {
+                // very important to use else otheriwse if ptr moves ahead and 
+                // say there were 3 repeating elements in a row then we will miss one
+                ptr = ptr->next;
+            }
+        }
+        node = node->next;
+    }
 }
 
 int main()
