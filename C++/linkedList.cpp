@@ -41,6 +41,8 @@ void print(linkedList *head, string sep = " ") //here we took head by value as w
 
 int len(linkedList *head){
     int length = 0;
+    if (head == nullptr)
+        return length;
     linkedList *ptr = head;
     while(head->next != nullptr){
         length++;
