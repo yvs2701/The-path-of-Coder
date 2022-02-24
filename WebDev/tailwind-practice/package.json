@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-practice",
+  "version": "1.0.0",
+  "description": "a dummy website just for the demonstration of basic tailwind concepts.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./output.css"
+  },
+  "keywords": [],
+  "author": "Yashvardhan Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  }
+}

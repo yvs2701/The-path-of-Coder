@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply /* group */ col-span-1 border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition cursor-pointer;
+    /* @apply should not be used with the 'group' utility */
+}
+
+.card-title {
+    @apply text-lg font-bold /* group-hover:text-blue-600 */ transition;
+    /* @apply should not be used with the 'group' utility */
+}
+
+.card-text {
+    @apply /* group-hover:text-blue-600 */ transition;
+    /* @apply should not be used with the 'group' utility */
+}
