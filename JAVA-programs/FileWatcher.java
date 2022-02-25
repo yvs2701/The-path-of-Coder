@@ -17,8 +17,11 @@ class FileWatcher {
                     System.out.print((char) reader.read());
                     noEditCount = 0;
                 } else {
-                    if (noEditCount == 6) // print styled text for no edits every minute (6*10 seconds)
+                    if (noEditCount == 6) {
+                        // print styled text for no edits every minute (6*10 seconds)
                         System.out.println("\n" + ANSI_ITALIC_GREEN + "[no new edit]" + ANSI_RESET);
+                        noEditCount = 0;
+                    }
                     noEditCount++;
                     try {
                         // try catch was needed to handle: "Unhandled exception type
