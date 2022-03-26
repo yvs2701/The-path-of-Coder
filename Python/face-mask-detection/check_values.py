@@ -12,22 +12,19 @@ if __name__ == "__main__":
     without_mask = np.load('data/without_mask.npy')
     row_without_mask, a, b, c = without_mask.shape
     without_mask = without_mask.reshape(row_without_mask, a*b*c)
+    print ("shape: ") # currently we have a 6000 (3k + 3k) photos as our data
+    print (row_with_mask)
+    print (row_without_mask)
 
     X = np.r_[with_mask, without_mask] # merge them row wise
     labels = np.zeros(X.shape[0])
     # divide the array in with mask (0) and without mask (1)
     labels[row_with_mask:] = 1 # all the rows from from last row_with_mask to end is rows without mask
-    rectangle_label = {0: 'Wearing Mask', 1: 'No Mask'}
 
     x_train, x_test, y_train, y_test = train_test_split(X, labels, test_size=0.2) # 20% data for testing
 
-    svm = SVC()
-    svm.fit(x_train, y_train)
+    svm = joblib.load('model/svm_model.pkl')
     y_pred = svm.predict(x_test)
     
     accuracy = accuracy_score(y_test, y_pred)
-    print(accuracy)
-    if accuracy >= 0.90:
-        joblib.dump(svm, 'model/svm_model.pkl') # save model if it is accurate enough
-    else:
-        raise Exception('Accuracy was less than 90%\nModel was not saved, try again :(')
+    print("accuracy = ", accuracy) # around 98% or 99%
