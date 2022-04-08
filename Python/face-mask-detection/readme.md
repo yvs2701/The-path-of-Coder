@@ -10,7 +10,7 @@ You can press 'q' key to quit the app.
 - Now your data is ready you can go on execute **train_model.py** to train and save the model.
   - Note that if the model is not accurate enough you will get an error message stating the same.
   - To resolve this try adjusting your lighting and sit in a brighter room.
-  - Also wearing a mask which matches your sking color a lot may make it difficult for the model to be accurate.
+  - Also wearing a mask which matches your skin color a lot may make it difficult for the model to be accurate.
 - Now you may execute **main.py** to see this app in action.
 
 ## Installation
