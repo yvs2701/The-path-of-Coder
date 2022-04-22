@@ -11,11 +11,16 @@ if __name__ == '__main__':
     row_without_mask, a, b, c = without_mask.shape
     without_mask = without_mask.reshape(row_without_mask, a*b*c)
 
-    X = np.r_[with_mask, without_mask] # merge them row wise
+    wrong_mask = np.load('data/wrong_mask.npy')
+    row_wrong_mask, a, b, c = wrong_mask.shape
+    wrong_mask = wrong_mask.reshape(row_wrong_mask, a*b*c)
+
+    X = np.r_[with_mask, without_mask, wrong_mask] # merge them row wise
     labels = np.zeros(X.shape[0])
     # divide the array in with mask (0) and without mask
     labels[row_with_mask:] = 1 # all the rows from from last row_with_mask to end is rows without mask
-    rectangle_label = {0: 'Wearing Mask', 1: 'No Mask'}
+    labels[row_with_mask + row_wrong_mask:] = 2 # all the rows from from last row_with_mask to end is rows under the nose
+    rectangle_label = {0: 'Wearing Mask', 1: 'No Mask', 2: 'Under the Nose'}
 
     haar_data = cv2.CascadeClassifier('data/haarcascade_frontal_face_default.xml')
     capture = cv2.VideoCapture(0)
@@ -38,8 +43,10 @@ if __name__ == '__main__':
 
                 if pred == 0:
                     cv2.rectangle(img, (x,y), (x+w,y+h), (0, 255, 0), 4) # green rectangle (wearing mask)
-                else:
+                elif pred == 1:
                     cv2.rectangle(img, (x,y), (x+w,y+h), (0, 0, 255), 4) # red rectangle (no mask)
+                elif pred == 2:
+                    cv2.rectangle(img, (x,y), (x+w,y+h), (0, 255, 255), 4) # yellow rectangle (no mask)
                 # out a label on this rectangle
                 cv2.putText(img=img, text=rectangle_label[pred], org=(x,y), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(255,255,255), thickness=2)
 
