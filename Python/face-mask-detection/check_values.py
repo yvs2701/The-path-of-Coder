@@ -1,7 +1,6 @@
 import joblib
 import numpy as np
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 
 if __name__ == "__main__":
@@ -27,4 +26,4 @@ if __name__ == "__main__":
     y_pred = svm.predict(x_test)
     
     accuracy = accuracy_score(y_test, y_pred)
-    print("accuracy = ", accuracy) # around 98% or 99%
+    print(classification_report(y_true=y_test, y_pred=y_pred))
