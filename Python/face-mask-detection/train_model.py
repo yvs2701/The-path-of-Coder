@@ -5,15 +5,15 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 if __name__ == "__main__":
-    with_mask = np.load('data/with_mask.npy')
+    with_mask = np.load('test/data/with_mask.npy')
     row_with_mask, a, b, c = with_mask.shape
     with_mask = with_mask.reshape(row_with_mask, a*b*c)
 
-    without_mask = np.load('data/without_mask.npy')
+    without_mask = np.load('test/data/without_mask.npy')
     row_without_mask, a, b, c = without_mask.shape
     without_mask = without_mask.reshape(row_without_mask, a*b*c)
 
-    wrong_mask = np.load('data/wrong_mask.npy')
+    wrong_mask = np.load('test/data/wrong_mask.npy')
     row_wrong_mask, a, b, c = wrong_mask.shape
     wrong_mask = wrong_mask.reshape(row_wrong_mask, a*b*c)
 
@@ -33,6 +33,6 @@ if __name__ == "__main__":
     accuracy = accuracy_score(y_test, y_pred)
     print(accuracy)
     if accuracy >= 0.90:
-        joblib.dump(svm, 'model/svm_model.pkl') # save model if it is accurate enough
+        joblib.dump(svm, 'test/model/svm_model.pkl') # save model if it is accurate enough
     else:
         raise Exception('Accuracy was less than 90%\nModel was not saved, try again :(')
