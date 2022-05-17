@@ -42,5 +42,3 @@ if __name__ == "__main__":
     saveDataFromCamera(haar_data=haar_data, fileName="test/data/without_mask.npy")
     time.sleep(10) # wait for 10 seconds for user to wear his mask
     saveDataFromCamera(haar_data=haar_data, fileName="test/data/with_mask.npy")
-    time.sleep(10) # wait for 10 seconds for user to wear his mask
-    saveDataFromCamera(haar_data=haar_data, fileName="test/data/wrong_mask.npy")
