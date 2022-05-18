@@ -16,8 +16,8 @@ class Strobogrammatic {
             else if (arr[i] == '9')
                 arr[i] = '6';
         }
-        for (int i = 0; i < l/ 2; i++) {
-            if (str.charAt(i) != arr[l - 1 - i]) {
+        for (int i = 0; i < l; i++) {
+            if (str.charAt(i) != arr[l - 1 - i]) { // matches reverse and converted string (180 deg turned) with original
                 System.out.println("Number is not strobogrammatic");
                 return;
             }
