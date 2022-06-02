@@ -41,7 +41,8 @@ class ForestFire {
                 forest[i][j] = sc.next().toUpperCase().charAt(0); // character input
         sc.close();
         forest[x][y] = 'B';
-        System.out.println(burnForest(forest, x, y, 1));
+        // First tree was burnt in 1st minute, so we shall start counting from 2nd minute
+        System.out.println(burnForest(forest, x, y, 2));
     }
 
     private static int burnForest(char[][] forest, int x, int y, int minute) {
@@ -52,8 +53,6 @@ class ForestFire {
         if (x + 1 < forest.length && y + 1 < forest[0].length && forest[x + 1][y + 1] == 'T') {
             forest[x + 1][y + 1] = 'B';
             count++;
-            if (count == 1)
-                minute++;
             minute = burnForest(forest, x + 1, y + 1, minute);
         }
         if (x - 1 < 0 && y - 1 < 0 && forest[x - 1][y - 1] == 'T') {
@@ -72,6 +71,8 @@ class ForestFire {
         }
         if (x - 1 >= 0 && y + 1 < forest[0].length && forest[x - 1][y + 1] == 'T') {
             forest[x - 1][y + 1] = 'B';
+            if (count == 1)
+                minute++;
             minute = burnForest(forest, x - 1, y + 1, minute + 1);
         }
         if (y + 1 < forest[0].length && forest[x][y + 1] == 'T') {
