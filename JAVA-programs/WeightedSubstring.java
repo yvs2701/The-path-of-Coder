@@ -15,7 +15,7 @@ class WeightedSubstring {
                 sum -= Q.charAt(P.charAt(start) - 'a') - '0';
                 start++;
             }
-            if (start > end) {
+            if (start > end && start < length) {
                 // we kept incrementing start since sum > k but now it crossed end
                 // if end < length then move
                 end++;
@@ -25,3 +25,8 @@ class WeightedSubstring {
         System.out.println();
     }
 }
+/* 
+Logic fixed for the following test case:
+    String P = "yewxz", Q = "02340678902340678902340678";
+    int k = 7;
+*/
