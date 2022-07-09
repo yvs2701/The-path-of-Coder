@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | auth-demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="api/login" method="post" id="login-form">
+        <span class="form-header">Sign in to your account</span>
+        <div class="form-body">
+            <!-- <div class="form-div">
+                <input type="text" name="email" id="email" placeholder="email" autocomplete="off" autofocus />
+            </div> -->
+            <div class="form-div">
+                <input type="text" name="username" id="username" placeholder="username" autocomplete="off" autofocus />
+            </div>
+            <div class="form-div">
+                <input type="password" name="password" id="password" placeholder="password" autocomplete="off" />
+            </div>
+        </div>
+        <a class="forgot-password" href="./forgotPassword.html">forgot password?</a>
+        <button type="submit" id="submit">Login</button>
+        <a class="sign-up" href="./signup.html">Sign Up</a>
+    </form>
+    <script src="./axios.min.js"></script>
+    <script src="./submitLogin.js"></script>
+</body>
+
+</html>

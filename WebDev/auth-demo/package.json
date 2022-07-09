@@ -1,0 +1,21 @@
+{
+  "name": "auth-demo",
+  "version": "1.0.0",
+  "description": "a basic 3 page website to demonstrate user authentication and basic database usage to achieve it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Yashvardhan Singh (github: yvs2701)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "googleapis": "^105.0.0",
+    "mongoose": "^6.4.3",
+    "nodemailer": "^6.7.7"
+  }
+}
