@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 form {
     padding: 30px;
@@ -90,4 +91,46 @@ button {
 button:focus {
     border: 2px solid #6a62d2;
     border-radius: 4px;
+}
+
+.error-toast {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #c23934;
+    color: white;
+    transition: transform 0.5s ease-out;
+}
+.toast-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+.toast-body {
+    font-size: 16px;
+}
+.toast-loader {
+    width: 0; /* final state of width after animation */
+    border: none; /* final state for border after animation */
+    margin-top: 0.5rem;
+    animation: timeout10sec 10s linear;
+}
+@keyframes timeout10sec {
+    0% {
+        width: 100%;
+        border: 2px solid white;
+    }
+    95% {
+        width: 0;
+        border: 2px solid white;
+    }
+    100% {
+        border: 2px solid transparent;
+        /* do not remove the border instead make it transparent
+        to not disturb the height of the toast
+        and don't just specify border-color, specify width too, otherwise CSS will animate it to 0 */
+        /* if we do not visually remove the border a 4px square is still present even after
+        width of hr becomes 0 */
+    }
 }

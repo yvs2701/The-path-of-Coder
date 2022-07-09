@@ -7,17 +7,25 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
     axios.post('/api/login', data).then(response => {
         if (response.status === 200 && response.data.success) {
             console.log(response.data.message)
-            location.href = "./signup.html";
+            location.href = "./home.html";
         }
         else if (!response.data.success) {
-            console.log(response.data.message);
-            if (response.data.error) 
+            // display an error toast
+            const toast = document.createElement("div");
+            toast.classList.add("error-toast");
+            toast.innerHTML = `<h6 class='toast-header'>Error</h6>
+            <p class='toast-body'>${response.data.message}</p>
+            <hr class='toast-loader'>`;
+            document.getElementsByTagName("body")[0].appendChild(toast);
+            setTimeout(() => {
+                toast.style.transform = 'translateX(calc(100% + 10px))'; // slide it out
+                setTimeout(() => {toast.remove();}, 500)
+            }, 10000);
+
+            if (response.data.error)
                 console.error(response.data.error);
         }
     }).catch(err => {
         console.error(err);
     });
 });
-
-// page exit animation
-// document.querySelector('form').style.opacity = 0;

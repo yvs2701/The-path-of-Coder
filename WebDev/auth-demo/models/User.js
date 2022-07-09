@@ -9,6 +9,10 @@ var UserSchema = new mongoose.Schema({
         match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
         index: true
     },
+    name: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         unique: true,
@@ -19,12 +23,12 @@ var UserSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: true
     },
     verified: {
         type: Boolean,
         default: false,
-        required: true,
+        required: true
     }
 }, { timestamps: true });
 
