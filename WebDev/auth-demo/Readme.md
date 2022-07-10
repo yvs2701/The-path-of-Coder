@@ -1,5 +1,5 @@
 # Auth-demo
-![Demonstration](/%5Bdemo%5Dauth-demo.webm)
+[demo video](https://user-images.githubusercontent.com/79207707/178149710-8463c9f1-4942-41be-95bc-d6e9dafbeaa4.webm)
 
 - auth-demo is a basic website developed to demonstrate how to implement authentication system using plain and simple HTML, CSS Javascript along with Express framework for backend.
 - The project uses MongoDB for the database, and Mogoose ODM.
