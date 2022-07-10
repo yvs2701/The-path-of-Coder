@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #6a62d2;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.user-card {
+    padding: 30px;
+    margin: 0 auto;
+    min-width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.card-body {
+    width: 100%;
+    border-spacing: 1rem 2rem;
+}
+.card-div {
+    margin-top: 2rem;
+    width: 400px;
+    padding: 0.75rem;
+    color: #383838;
+}
+.card-div-header {
+    text-align: end;
+    font-size: 18px;
+}
+.card-header {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    font-size: 21px;
+    color: #383838;
+}
+
+.logout {
+    margin-top: 2rem;
+    padding: 10px;
+    width: 400px;
+    color: white;
+    background-color: #746bde;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.logout:hover {
+    background-color: #6a62d2;
+}
+.logout:focus {
+    border: 2px solid #746bde;
+}

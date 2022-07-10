@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page | auth-demo</title>
+    <link rel="stylesheet" href="/home-style.css">
+</head>
+<body>
+    <div class="user-card">
+        <span class="card-header">${USERSNAME}</span>
+            <table class="card-body">
+                <tr class="card-div">
+                    <td class="card-div-header">user-id:</td>
+                    <td class="card-div-body">${USERNAME}</td>
+                </tr>
+                <tr class="card-div">
+                    <td class="card-div-header">email:</td>
+                    <td class="card-div-body">${EMAIL}</td>
+                </tr>
+            </table>
+        <a class="logout" id="logout" href="/">Logout</a>
+    </div>
+    <script src="/axios.min.js"></script>
+    <script>
+        // handle log out
+        document.getElementById('logout').addEventListener('click', (e) => {
+        });
+    </script>
+</body>
+</html>

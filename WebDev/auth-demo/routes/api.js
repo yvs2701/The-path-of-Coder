@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const google = require('googleapis');
-const nodemailer = require('nodemailer')
-const User = require('../models/User')
+const nodemailer = require('nodemailer');
+const User = require('../models/User');
 
 /* The following API routes are handled:
 /user/login - request body should be like {username: ..., password: ...}
 /user/register - request body should have username, email and password
 /user/forgotPassword - request should contain user email, the password will be emailed if user registered with that email-id
 /verify:id - verifies the user's email, necessary for login */
-const OAuth2Client = new google.Auth.OAuth2Client(process.env.Oauth_Id, process.env.Oauth_Secret, process.env.Oauth_Redirect_URI)
-OAuth2Client.setCredentials({ refresh_token: process.env.Oauth_Refresh_Token })
-const accessToken = OAuth2Client.getAccessToken()
+const OAuth2Client = new google.Auth.OAuth2Client(process.env.Oauth_Id, process.env.Oauth_Secret, process.env.Oauth_Redirect_URI);
+OAuth2Client.setCredentials({ refresh_token: process.env.Oauth_Refresh_Token });
+const accessToken = OAuth2Client.getAccessToken();
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -27,18 +27,16 @@ let transporter = nodemailer.createTransport({
 router.post("/login", async (req, res) => {
     const user = req.body; // no security (sanitization, encryption, etc) implemented!
     try {
-        User.findOne({ 'username': user.username }, (err, doc) => {
-            if (err)
-                throw new Error(err);
-            else if (doc == null)
-                res.status(200).json({ success: false, message: 'No such user exists !' });
-            else if (!doc.verified)
-                res.status(200).json({ success: false, message: 'Please verify your email first !' });
-            else if (doc.password === user.password)
-                res.status(200).json({ success: true, message: 'User logged in !' });
-            else
-                res.status(200).json({ success: false, message: 'Invalid Credentials !' });
-        });
+        let doc = await User.findOne({ 'username': user.username }).lean();
+        if (doc == null)
+            res.status(200).json({ success: false, message: 'No such user exists !' });
+        else if (!doc.verified)
+            res.status(200).json({ success: false, message: 'Please verify your email first !' });
+        else if (doc.password === user.password)
+            res.status(200).json({ success: true, message: 'User logged in !', user: doc._id });
+        // res.status(303).redirect(`/home/${doc._id}`);
+        else
+            res.status(200).json({ success: false, message: 'Invalid Credentials !' });
     } catch (e) {
         console.error(e);
         res.status(500).json({ success: false, message: 'Some error occured !' });
@@ -48,15 +46,20 @@ router.post("/register", async (req, res) => {
     const user = new User(req.body); // no security (sanitization, encryption, etc) implemented!
     try {
         user.save(async (err, doc) => {
-            if (err) throw new Error(err);
-            // else
-            await transporter.sendMail({
-                from: "Auth Demo", // sender address
-                to: doc.email,
-                subject: "Auth Demo - Confirm registration", // Subject line
-                text: `Confirm your registeration at http://localhost:3000/api/verify:${doc._id}`,
-                html:
-                    `<html>
+            if (err && err.code === 11000) {
+                res.status(200).json({ success: false, message: `${Object.keys(err.keyPattern)[0]} is duplicate` });
+            } else if (err) {
+                console.error(err);
+                res.status(500).json({ success: false, message: 'Some error occured !' });
+            }
+            else {
+                await transporter.sendMail({
+                    from: "Auth Demo", // sender address
+                    to: doc.email,
+                    subject: "Auth Demo - Confirm registration", // Subject line
+                    text: `Confirm your registeration at http://localhost:3000/api/verify/${doc._id}`,
+                    html:
+                        `<html>
                     <body>
                         <h3 
                             style="
@@ -64,12 +67,12 @@ router.post("/register", async (req, res) => {
                                 padding-bottom: 10px;
                                 font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;"
                         >
-                            Hi ${doc.username},
+                            Hi ${doc.name},
                             <br/>
                             To login to your account first complete your verification !
                         </h3>
                         <a 
-                            href="http://localhost:3000/api/verify:${doc._id}" 
+                            href="http://localhost:3000/api/verify/${doc._id}" 
                             style="
                                 background-color: rgb(0, 0, 0);
                                 color: rgb(255, 255, 255);
@@ -102,9 +105,9 @@ router.post("/register", async (req, res) => {
                         <small>This email is automatic, please do not answer it.</small>
                     </body>
                 </html>`,
-            });
-
-            res.status(200).json({ success: true, message: 'User registered !' });
+                });
+                res.status(200).json({ success: true, message: 'User registered !' });
+            }
         });
     } catch (e) {
         console.error(e);
@@ -115,8 +118,10 @@ router.post("/forgotPassword", async (req, res) => {
     const user = new User(req.body); // no security (sanitization, encryption, etc) implemented!
     try {
         const doc = await User.findOne({ 'email': user.email }).lean();
-        if (!doc.verified)
-            res.status(200).json({ success: false, message: 'Please verify your email first !' });
+        if (doc == null)
+            res.status(200).json({ success: false, message: 'This email is not registered !' });
+        else if (!doc.verified)
+            res.status(200).json({ success: false, message: 'Please verify your email !' });
         else {
             await transporter.sendMail({
                 from: "Auth Demo", // sender address
@@ -131,13 +136,13 @@ router.post("/forgotPassword", async (req, res) => {
                         padding-bottom: 10px;
                         font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;"
                 >
-                    Hi ${doc.username},
+                    Hi ${doc.name},
                     <br/>
                     Your password is:
                 </h3>
-                <h5 style="font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+                <h4 style="font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
                     ${doc.password}
-                </h5>
+                </h4>
             </body>
             </html>`
             });
@@ -149,14 +154,15 @@ router.post("/forgotPassword", async (req, res) => {
         res.status(500).json({ success: false, message: 'Some error occured !' });
     }
 });
-router.get("/verify:id", async (req, res) => {
-    const usr_id = req.params.id;
+router.get("/verify/:id", async (req, res) => {
+    const usr_id = req.params['id'];
     try {
         const doc = await User.findByIdAndUpdate(usr_id, { verified: true }).lean();
         if (doc == null)
             res.status(200).json({ success: false, message: 'User not found !' });
         else
-            res.status(200).json({ success: true, message: 'User verified !' });
+            res.status(303).redirect(`/home/${usr_id}`);
+        // res.status(200).json({ success: true, message: 'User verified !' });
     } catch (e) {
         console.error(e);
         res.status(500).json({ success: false, message: 'Some error occured !' });

@@ -23,7 +23,6 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.5s ease;
 }
 
 .form-div {
@@ -36,12 +35,6 @@ form {
     /* font-weight: bold; */
     font-size: 21px;
     color: #383838;
-}
-.form-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 input {
@@ -62,13 +55,13 @@ input:focus {
     border-radius: 4px;
 }
 
-.forgot-password {
+.form-link-1 {
     margin-top: 1rem;
     color: #4a4a4a;
     font-size: 14px;
     cursor: pointer;
 }
-.sign-up {
+.form-link-2 {
     margin-top: 1rem;
     color: #6a62d2;
     cursor: pointer;
@@ -84,13 +77,17 @@ button {
     width: 400px;
     color: white;
     background-color: #746bde;
+    font-size: 14px;
     border: none;
+    border-radius: 4px;
     outline: none;
     cursor: pointer;
 }
+button:hover {
+    background-color: #6a62d2;
+}
 button:focus {
-    border: 2px solid #6a62d2;
-    border-radius: 4px;
+    border: 2px solid #746bde;
 }
 
 .error-toast {
@@ -100,6 +97,16 @@ button:focus {
     padding: 10px;
     width: 300px;
     background-color: #c23934;
+    color: white;
+    transition: transform 0.5s ease-out;
+}
+.success-toast {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #00c950;
     color: white;
     transition: transform 0.5s ease-out;
 }

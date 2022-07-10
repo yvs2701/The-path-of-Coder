@@ -1,13 +1,15 @@
-document.getElementById('login-form').addEventListener('submit', (e) => {
+document.getElementById('signup-form').addEventListener('submit', (e) => {
     e.preventDefault();
     // POST the form data
-    let data = {}
+    let data = {};
+    data.name = document.getElementById('name').value;
+    data.email = document.getElementById('email').value;
     data.username = document.getElementById('username').value;
     data.password = document.getElementById('password').value;
-    axios.post('/api/login', data).then(response => {
+    axios.post('/api/register', data).then(response => {
         if (response.status === 200 && response.data.success) {
-            console.log(response.data.message)
-            location.href = `/home/${response.data.user}`;
+            console.log(response.data.message);
+            location.href = "/";
         }
         else if (!response.data.success) {
             // display an error toast
@@ -19,7 +21,7 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
             document.getElementsByTagName("body")[0].appendChild(toast);
             setTimeout(() => {
                 toast.style.transform = 'translateX(calc(100% + 10px))'; // slide it out
-                setTimeout(() => { toast.remove(); }, 500)
+                setTimeout(() => {toast.remove();}, 500);
             }, 10000);
 
             if (response.data.error)
