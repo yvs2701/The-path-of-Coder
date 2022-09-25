@@ -9,7 +9,7 @@ class Email_GUI:
         self.email = email
 
         self.frame = Frame(master)
-        master.title('Python Email, by DS')
+        master.title('PyMail - email client')
         master.minsize(width = 400, height = 400)
         master.config(bg = 'cyan')
         self.title = Label(master, text = 'PyMail', font = ("Century Gothic", 40), fg = 'black', bg = 'cyan')
