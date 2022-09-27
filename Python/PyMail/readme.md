@@ -8,7 +8,11 @@ A simple email client made using Python.
 - Python
 - pip
 - MySQL
-
+## Using
+Run the main.py inside PyMail subdirectory after installing the dependencies (read Installation guide first) by executing the following command:
+```
+python main.py
+```
 ## Installation
 The app's installation process is quite easy. Simply clone this github repo from your terminal or press download as zip, 
 and then unzip the downloaded folder to the directory of your choice.
