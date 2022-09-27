@@ -42,7 +42,8 @@ class Email:
         '''Saves an email draft written by the user'''
         cursor = self.DBConnection.cursor()
         try:
-            cursor.execute(f'insert into draft(sender, receivers, subject, body) values ("{self._username}", "{to}", "{subject}", "{message}")')
+            cursor.execute(f'insert into draft(sender, body, receivers, subject) values ("{self._username}", "{message}", "{to}", "{subject}");')
+            self.DBConnection.commit() # to make the changes persisting
             print('Saved draft !!')
             return True
         except Exception as e:
