@@ -17,7 +17,7 @@ python main.py
 The app's installation process is quite easy. Simply clone this github repo from your terminal or press download as zip, 
 and then unzip the downloaded folder to the directory of your choice.
 <br>
-<img src="./install guide - 1">
+<img src="https://raw.githubusercontent.com/yvs2701/The-path-of-Coder/main/Python/PyMail/install%20guide%20-%201.png">
 
 Then navigate to the the directory and *inside the PyMail subdirectory*, open your terminal and type:
 ```
