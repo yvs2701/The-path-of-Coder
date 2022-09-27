@@ -1,19 +1,18 @@
 import smtplib
 import Database
 class Email:
-    def __init__(self, username, password, client):
+    def __init__(self, username, password, cl):
         self.DBConnection = Database.connectDB()
         
         self._username = username
         self._password = password
         self._email = username
 
-        self.client = client
-        self.clients = {'Gmail':['smtp.gmail.com', 587], 'Outlook':['smtp.live.com', 587], 'Yahoo':['smtp.mail.yahoo.com', 465]}
-        self.email_client=self.clients[client][0]
-        self.port = self.clients[client][1]
-
+        self.client = {'Gmail':['smtp.gmail.com', 587], 'Outlook':['smtp.live.com', 587], 'Yahoo':['smtp.mail.yahoo.com', 465]}
+        self.email_client=self.client[cl][0]
+        self.port = self.client[cl][1]
         self.smtp = smtplib.SMTP(self.email_client, self.port)
+        self.cl = cl
 
     def login(self):
         '''Logs in with specified credentials
