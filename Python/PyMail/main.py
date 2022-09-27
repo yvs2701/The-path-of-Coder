@@ -1,7 +1,9 @@
 from tkinter import Tk
-import Authentication
+from Authentication import Authentication
+import Database
 
 if __name__ == '__main__':
-    root = Tk()
-    auth = Authentication.Authentication(root) # module.class
-    root.mainloop()
+    if Database.initialize() == True:
+        root = Tk()
+        auth = Authentication(root) # module.class
+        root.mainloop()

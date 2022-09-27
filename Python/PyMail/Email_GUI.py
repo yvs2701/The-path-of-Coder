@@ -1,5 +1,4 @@
-from tkinter import *
-from tkinter import Text, messagebox
+from tkinter import END, Button, Entry, Frame, Label, Text, Tk, messagebox
 import Authentication
 from Email import Email
 
@@ -46,13 +45,16 @@ class Email_GUI:
         self.send = Button(master, text = 'Send Email', command=self.send_email)
         self.send.pack()
 
+        self.send = Button(master, text = 'Save Draft', command=self.save_draft)
+        self.send.pack()
+
         self.logout = Button(master, text = 'Logout', command=self.logout)
         self.logout.pack()
 
         self.master = master
 
     def send_email(self):
-        ''' --- SENDS EMAIL --- '''
+        '''--- SENDS EMAIL ---'''
         rec = self.rec_email.get()
 
         lst = rec.split() # list of email strings
@@ -76,6 +78,18 @@ class Email_GUI:
                     messagebox.showinfo('Email Sent!', f'Congratulations! Successfully Sent Email!\n\nSubject: {subj}\n\nRecipient(s): {rec}')
         else:
             messagebox.showerror('Invalid reciever(s) format!')
+
+    def save_draft(self):
+        '''--- Saves current email as draft ---'''
+        rec = self.rec_email.get()
+        subj = self.text.get()
+        mes = self.main.get(0.0, END)
+
+        success = self.email.saveAsDraft(to = rec, subject=subj, message=mes)
+        if success == True:
+            messagebox.showinfo('Saved', 'Saved as Draft !')
+        if success == False:
+            messagebox.showinfo('Error', 'Error while saving the draft!')
 
 
     def logout(self):
