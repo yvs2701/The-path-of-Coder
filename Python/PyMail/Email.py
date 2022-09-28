@@ -51,3 +51,27 @@ class Email:
             return False
         finally:
             cursor.close()
+
+    def deleteDraft(self, to='', subject='', message=''):
+        '''Delete draft'''
+        cursor = self.DBConnection.cursor()
+        try:
+            cursor.execute(f'delete from draft where sender="{self._username}" and receivers="{to}" and subject="{subject}" and body="{message.strip()}";')
+            self.DBConnection.commit() # to make the changes persisting
+            print('Deleted saved draft !!')
+            return True
+        except Exception as e:
+            print('Error while deleting a draft', e)
+            return False
+        finally:
+            cursor.close()
+
+    def loadDrafts(self):
+        cursor = self.DBConnection.cursor()
+        try:
+            cursor.execute(f'select * from draft where sender="{self._username}"')
+            result = cursor.fetchall()
+            return (True, result)
+        except Exception as e:
+            print('Error while reading from draft table', e)
+            return (False)

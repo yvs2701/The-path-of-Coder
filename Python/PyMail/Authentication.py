@@ -1,6 +1,6 @@
 from tkinter import Button, Entry, Frame, Label, OptionMenu, StringVar, Tk, messagebox
 from Email import Email
-from Email_GUI import Email_GUI
+from UserActions import UserActions
 
 class Authentication:
     def __init__(self, master):
@@ -63,6 +63,6 @@ class Authentication:
                 messagebox.showinfo('Connection Successful!', f'Connected to: \n{user}\nOK to proceed')
                 self.master.destroy()
                 root = Tk()
-                Email_GUI(root, connect)
+                UserActions(root, connect)
             else:
                 messagebox.showerror('Connection Fail, try again', 'Invalid Username, Password, or Client, Please Try Again.')

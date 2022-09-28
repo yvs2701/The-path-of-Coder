@@ -3,7 +3,7 @@ import Authentication
 from Email import Email
 
 class Email_GUI:
-    def __init__(self, master, email:Email):
+    def __init__(self, master, email:Email, rec_email='', text='', main='', isDraft = False):
         
         self.email = email
 
@@ -27,18 +27,21 @@ class Email_GUI:
         self.notice.pack()
 
         self.rec_email = Entry(master, width = 40)
+        self.rec_email.insert(0, rec_email)
         self.rec_email.pack()
 
         self.sub_title = Label(master, text = '\nSubject', font = ("Century Gothic", 18), bg = 'cyan')
         self.sub_title.pack()
 
         self.text = Entry(master,width = 40)
+        self.text.insert(0, text)
         self.text.pack()
 
         self.text_title = Label(master, text = '\nMessage', font = ("Century Gothic", 18), bg = 'cyan')
         self.text_title.pack()
 
         self.main = Text(master, width = 50, height = 5)
+        self.main.insert('0.0', main)
         self.main.config(borderwidth=3)
         self.main.pack(ipady =3)
 
@@ -76,6 +79,8 @@ class Email_GUI:
                         break
                 if success == True:
                     messagebox.showinfo('Email Sent!', f'Congratulations! Successfully Sent Email!\n\nSubject: {subj}\n\nRecipient(s): {rec}')
+                    # now delete the draft (if this email was a draft)
+                    self.email.deleteDraft(to=address, subject=subj, message=mes)
         else:
             messagebox.showerror('Invalid reciever(s) format!')
 
