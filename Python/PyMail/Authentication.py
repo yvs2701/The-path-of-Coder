@@ -6,14 +6,14 @@ class Authentication:
     def __init__(self, master):
         self.frame = Frame(master)
         master.minsize(width = 200, height = 200)
-        master.config(bg = 'cyan')
+        master.config(bg = 'orange')
         master.title('Login')
-        self.title = Label(master, text = 'PyMail Authentication', font = ("Century Gothic", 40), fg = 'black', bg = 'cyan')
+        self.title = Label(master, text = 'PyMail Authentication', font = ("Century Gothic", 40), fg = 'snow', bg = 'orange')
 
         self.title.pack()
         
         text1 = 'Login to the email system! \nSupported Services: Gmail, Outlook, Yahoo'
-        self.detail = Label(master, text = text1, font = ("Century Gothic", 15), fg = 'black', bg = 'cyan')
+        self.detail = Label(master, text = text1, font = ("Century Gothic", 15), fg = 'indigo', bg = 'orange')
         self.detail.pack()
 
 
@@ -26,21 +26,21 @@ class Authentication:
         
         
         #Username
-        self.rec_title = Label(master, text = '\nEmail Address/Username', font = ("Century Gothic", 18), bg = 'cyan')
+        self.rec_title = Label(master, text = '\nEmail Address/Username', font = ("Century Gothic", 18), bg = 'orange')
         self.rec_title.pack()
         self.rec_email = Entry(master, width = 40)
         self.rec_email.pack()
         
         
         #Password
-        self.password_title = Label(master, text = '\nPassword', font = ("Century Gothic", 18), bg = 'cyan')
+        self.password_title = Label(master, text = '\nPassword', font = ("Century Gothic", 18), bg = 'orange')
         self.password_title.pack()
         self.password_entry = Entry(master, show='*', width = 40)
         self.password_entry.pack()
         
         
         #button
-        self.auth = Label(master, text = '\nAuthenticate', font = ("Century Gothic", 18), bg = 'cyan')
+        self.auth = Label(master, text = '\nAuthenticate', font = ("Century Gothic", 18), bg = 'orange')
         self.auth.pack()
         self.button = Button(master, text='Authenticate', command = self.make_connection)
         self.button.pack()

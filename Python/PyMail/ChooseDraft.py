@@ -1,4 +1,4 @@
-from tkinter import W, Button, Frame, Label, Radiobutton, Tk, messagebox, IntVar
+from tkinter import CENTER, Button, Frame, Label, Radiobutton, Tk, messagebox, IntVar
 import Authentication, Email, Email_GUI
 
 class ChooseDraft:
@@ -8,11 +8,11 @@ class ChooseDraft:
         self.frame = Frame(master)
         master.title('PyMail - email client')
         master.minsize(width = 400, height = 400)
-        master.config(bg = 'cyan')
-        self.title = Label(master, text = 'PyMail', font = ("Century Gothic", 40), fg = 'black', bg = 'cyan')
+        master.config(bg = 'orange')
+        self.title = Label(master, text = 'PyMail', font = ("Century Gothic", 40), fg = 'snow', bg = 'orange')
         self.title.pack()
 
-        self.question = Label(master, text = 'Which draft to edit?', font = ("Century Gothic", 18), bg = 'cyan')
+        self.question = Label(master, text = 'Which draft to edit?', font = ("Century Gothic", 18), bg = 'orange')
         self.question.pack()
 
         # drafts
@@ -21,8 +21,8 @@ class ChooseDraft:
             selectedRadio = IntVar()
             index = 0
             for draft in drafts[1]:
-                R = Radiobutton(master, text=draft[3], variable=selectedRadio, value=index)
-                R.pack(anchor = W)
+                R = Radiobutton(master, text=draft[3], variable=selectedRadio, value=index, bg='orange', borderwidth=0, highlightthickness=0)
+                R.pack(anchor = CENTER)
                 index += 1
 
             def submit():

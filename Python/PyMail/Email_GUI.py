@@ -10,34 +10,34 @@ class Email_GUI:
         self.frame = Frame(master)
         master.title('PyMail - email client')
         master.minsize(width = 400, height = 400)
-        master.config(bg = 'cyan')
-        self.title = Label(master, text = 'PyMail', font = ("Century Gothic", 40), fg = 'black', bg = 'cyan')
+        master.config(bg = 'orange')
+        self.title = Label(master, text = 'PyMail', font = ("Century Gothic", 40), fg = 'snow', bg = 'orange')
         self.title.pack()
 
         text1 = 'This is a simple python application that is used to \nsend emails with ease.'
-        self.detail = Label(master, text = text1, font = ("Century Gothic", 15), fg = 'black', bg = 'cyan')
+        self.detail = Label(master, text = text1, font = ("Century Gothic", 15), fg = 'snow', bg = 'orange')
         self.detail.pack()
 
-        self.connected = Label(master, text = f'\nConnected to: {self.email._username}\n({self.email.cl})\n', font = ("Century Gothic", 13), fg = 'red', bg = 'cyan')
+        self.connected = Label(master, text = f'\nConnected to: {self.email._username}\n({self.email.cl})\n', font = ("Century Gothic", 13), fg = 'indigo', bg = 'orange')
         self.connected.pack()
-        self.rec_title = Label(master, text = '\nReceiver Email Address', font = ("Century Gothic", 18), bg = 'cyan')
+        self.rec_title = Label(master, text = '\nReceiver Email Address', font = ("Century Gothic", 18), bg = 'orange')
         self.rec_title.pack()
 
-        self.notice = Label(master, text = 'Separate email addresses with a comma.', font = ("Century Gothic", 10), bg = 'cyan')
+        self.notice = Label(master, text = 'Separate email addresses with a comma.', font = ("Century Gothic", 10), bg = 'orange')
         self.notice.pack()
 
         self.rec_email = Entry(master, width = 40)
         self.rec_email.insert(0, rec_email)
         self.rec_email.pack()
 
-        self.sub_title = Label(master, text = '\nSubject', font = ("Century Gothic", 18), bg = 'cyan')
+        self.sub_title = Label(master, text = '\nSubject', font = ("Century Gothic", 18), bg = 'orange')
         self.sub_title.pack()
 
         self.text = Entry(master,width = 40)
         self.text.insert(0, text)
         self.text.pack()
 
-        self.text_title = Label(master, text = '\nMessage', font = ("Century Gothic", 18), bg = 'cyan')
+        self.text_title = Label(master, text = '\nMessage', font = ("Century Gothic", 18), bg = 'orange')
         self.text_title.pack()
 
         self.main = Text(master, width = 50, height = 5)
