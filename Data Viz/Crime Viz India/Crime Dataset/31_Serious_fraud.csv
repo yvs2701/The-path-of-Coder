@@ -1,0 +1,449 @@
+Country,State,Year,Group_Name,Sub_Group_Name,Loss_of_Property_1_10_Crores,Loss_of_Property_10_25_Crores,Loss_of_Property_25_50_Crores,Loss_of_Property_50_100_Crores,Loss_of_Property_Above_100_Crores
+India,Andhra Pradesh,2001,Serious Fraud - Cheating,2. Cheating ,4,0,0,0,0
+India,Arunachal Pradesh,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2001,Serious Fraud - Cheating,2. Cheating ,2,NULL,NULL,NULL,NULL
+India,Goa,2001,Serious Fraud - Cheating,2. Cheating ,2,NULL,NULL,NULL,NULL
+India,Gujarat,2001,Serious Fraud - Cheating,2. Cheating ,14,0,1,1,0
+India,Haryana,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Himachal Pradesh,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jharkhand,2001,Serious Fraud - Cheating,2. Cheating ,0,0,2,0,0
+India,Karnataka,2001,Serious Fraud - Cheating,2. Cheating ,52,0,0,0,0
+India,Maharashtra,2001,Serious Fraud - Cheating,2. Cheating ,8,1,0,0,0
+India,Meghalaya,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2001,Serious Fraud - Cheating,2. Cheating ,7,0,0,0,0
+India,Odisha,2001,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2001,Serious Fraud - Cheating,2. Cheating ,2150,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2001,Serious Fraud - Cheating,2. Cheating ,5,NULL,NULL,NULL,NULL
+India,West Bengal,2001,Serious Fraud - Cheating,2. Cheating ,2,2,0,0,0
+India,Andhra Pradesh,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2002,Serious Fraud - Cheating,2. Cheating ,16,0,0,0,0
+India,Daman & Diu,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Goa,2002,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Gujarat,2002,Serious Fraud - Cheating,2. Cheating ,10,1,0,1,1
+India,Haryana,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Himachal Pradesh,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2002,Serious Fraud - Cheating,2. Cheating ,4,0,0,0,0
+India,Madhya Pradesh,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Maharashtra,2002,Serious Fraud - Cheating,2. Cheating ,30,7,2,0,0
+India,Meghalaya,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2002,Serious Fraud - Cheating,2. Cheating ,3,0,0,0,0
+India,Odisha,2002,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2002,Serious Fraud - Cheating,2. Cheating ,485,0,0,0,0
+India,Tamil Nadu,2002,Serious Fraud - Cheating,2. Cheating ,1,1,0,0,0
+India,West Bengal,2002,Serious Fraud - Cheating,2. Cheating ,0,1,0,0,1
+India,Andhra Pradesh,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Arunachal Pradesh,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2003,Serious Fraud - Cheating,2. Cheating ,2,0,1,0,0
+India,Chhattisgarh,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Dadra & Nagar Haveli,2003,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Daman & Diu,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2003,Serious Fraud - Cheating,2. Cheating ,26,0,0,0,0
+India,Goa,2003,Serious Fraud - Cheating,2. Cheating ,6,NULL,NULL,NULL,NULL
+India,Gujarat,2003,Serious Fraud - Cheating,2. Cheating ,10,0,0,0,0
+India,Haryana,2003,Serious Fraud - Cheating,2. Cheating ,0,NULL,0,0,NULL
+India,Himachal Pradesh,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jharkhand,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2003,Serious Fraud - Cheating,2. Cheating ,24,0,0,0,0
+India,Maharashtra,2003,Serious Fraud - Cheating,2. Cheating ,4,2,0,0,0
+India,Meghalaya,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Odisha,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2003,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Sikkim,2003,Serious Fraud - Cheating,2. Cheating ,0,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2003,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,West Bengal,2003,Serious Fraud - Cheating,2. Cheating ,3,0,0,0,0
+India,Andhra Pradesh,2004,Serious Fraud - Cheating,2. Cheating ,2,0,0,0,0
+India,Arunachal Pradesh,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2004,Serious Fraud - Cheating,2. Cheating ,9,NULL,NULL,NULL,NULL
+India,Goa,2004,Serious Fraud - Cheating,2. Cheating ,2,NULL,NULL,NULL,NULL
+India,Gujarat,2004,Serious Fraud - Cheating,2. Cheating ,31,1,0,0,0
+India,Himachal Pradesh,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2004,Serious Fraud - Cheating,2. Cheating ,21,0,0,0,0
+India,Madhya Pradesh,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Maharashtra,2004,Serious Fraud - Cheating,2. Cheating ,14,1,1,0,0
+India,Manipur,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Mizoram,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2004,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Odisha,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Puducherry,2004,Serious Fraud - Cheating,2. Cheating ,NULL,1,NULL,NULL,NULL
+India,Punjab,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Sikkim,2004,Serious Fraud - Cheating,2. Cheating ,22,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2004,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,West Bengal,2004,Serious Fraud - Cheating,2. Cheating ,12,1,0,0,0
+India,Andhra Pradesh,2005,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Arunachal Pradesh,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2005,Serious Fraud - Cheating,2. Cheating ,2,0,0,0,0
+India,Chhattisgarh,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2005,Serious Fraud - Cheating,2. Cheating ,4,NULL,NULL,NULL,NULL
+India,Goa,2005,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Gujarat,2005,Serious Fraud - Cheating,2. Cheating ,19,1,0,0,0
+India,Haryana,2005,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Himachal Pradesh,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2005,Serious Fraud - Cheating,2. Cheating ,5,1,0,1,0
+India,Madhya Pradesh,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Maharashtra,2005,Serious Fraud - Cheating,2. Cheating ,35,2,2,0,0
+India,Manipur,2005,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Meghalaya,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Mizoram,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2005,Serious Fraud - Cheating,2. Cheating ,4,7,1,0,0
+India,Odisha,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Tamil Nadu,2005,Serious Fraud - Cheating,2. Cheating ,5,NULL,NULL,NULL,NULL
+India,Uttar Pradesh,2005,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,West Bengal,2005,Serious Fraud - Cheating,2. Cheating ,8,0,0,0,0
+India,Andhra Pradesh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Arunachal Pradesh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2006,Serious Fraud - Cheating,2. Cheating ,4,0,0,0,0
+India,Chhattisgarh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2006,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Gujarat,2006,Serious Fraud - Cheating,2. Cheating ,22,0,0,0,0
+India,Haryana,2006,Serious Fraud - Cheating,2. Cheating ,NULL,NULL,1,NULL,NULL
+India,Himachal Pradesh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jharkhand,2006,Serious Fraud - Cheating,2. Cheating ,182,0,0,0,0
+India,Karnataka,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Madhya Pradesh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Maharashtra,2006,Serious Fraud - Cheating,2. Cheating ,17,3,NULL,NULL,NULL
+India,Manipur,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Mizoram,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2006,Serious Fraud - Cheating,2. Cheating ,14,0,0,0,0
+India,Odisha,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Puducherry,2006,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2006,Serious Fraud - Cheating,2. Cheating ,35,NULL,NULL,NULL,NULL
+India,Uttar Pradesh,2006,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,West Bengal,2006,Serious Fraud - Cheating,2. Cheating ,9,1,0,0,0
+India,Andhra Pradesh,2007,Serious Fraud - Cheating,2. Cheating ,3,0,0,0,0
+India,Arunachal Pradesh,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Daman & Diu,2007,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Delhi,2007,Serious Fraud - Cheating,2. Cheating ,4,NULL,6,NULL,NULL
+India,Gujarat,2007,Serious Fraud - Cheating,2. Cheating ,11,1,0,0,0
+India,Haryana,2007,Serious Fraud - Cheating,2. Cheating ,1,0,15,0,0
+India,Himachal Pradesh,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2007,Serious Fraud - Cheating,2. Cheating ,5,0,0,0,0
+India,Karnataka,2007,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Kerala,2007,Serious Fraud - Cheating,2. Cheating ,4,NULL,NULL,NULL,NULL
+India,Madhya Pradesh,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Maharashtra,2007,Serious Fraud - Cheating,2. Cheating ,25,4,0,0,0
+India,Manipur,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Mizoram,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2007,Serious Fraud - Cheating,2. Cheating ,25,0,0,0,0
+India,Odisha,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Sikkim,2007,Serious Fraud - Cheating,2. Cheating ,34,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2007,Serious Fraud - Cheating,2. Cheating ,26,1,0,0,1
+India,Tripura,2007,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,West Bengal,2007,Serious Fraud - Cheating,2. Cheating ,7,1,0,0,0
+India,Andhra Pradesh,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Arunachal Pradesh,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2008,Serious Fraud - Cheating,2. Cheating ,73,0,0,0,0
+India,Chandigarh,2008,Serious Fraud - Cheating,2. Cheating ,3,0,0,0,0
+India,Chhattisgarh,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2008,Serious Fraud - Cheating,2. Cheating ,36,4,NULL,NULL,NULL
+India,Gujarat,2008,Serious Fraud - Cheating,2. Cheating ,28,0,0,0,0
+India,Haryana,2008,Serious Fraud - Cheating,2. Cheating ,4,7,5,0,0
+India,Himachal Pradesh,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2008,Serious Fraud - Cheating,2. Cheating ,22,1,0,0,0
+India,Kerala,2008,Serious Fraud - Cheating,2. Cheating ,5,2,NULL,NULL,NULL
+India,Maharashtra,2008,Serious Fraud - Cheating,2. Cheating ,42,1,0,0,0
+India,Manipur,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Mizoram,2008,Serious Fraud - Cheating,2. Cheating ,37,0,0,0,0
+India,Nagaland,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Odisha,2008,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Tamil Nadu,2008,Serious Fraud - Cheating,2. Cheating ,28,5,4,1,1
+India,Uttar Pradesh,2008,Serious Fraud - Cheating,2. Cheating ,0,NULL,NULL,NULL,NULL
+India,West Bengal,2008,Serious Fraud - Cheating,2. Cheating ,25,2,1,1,1
+India,Andhra Pradesh,2009,Serious Fraud - Cheating,2. Cheating ,1,0,0,0,0
+India,Arunachal Pradesh,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Assam,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chandigarh,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2009,Serious Fraud - Cheating,2. Cheating ,11,0,NULL,NULL,NULL
+India,Goa,2009,Serious Fraud - Cheating,2. Cheating ,4,NULL,NULL,NULL,NULL
+India,Gujarat,2009,Serious Fraud - Cheating,2. Cheating ,9,0,0,0,0
+India,Haryana,2009,Serious Fraud - Cheating,2. Cheating ,4,0,0,0,0
+India,Himachal Pradesh,2009,Serious Fraud - Cheating,2. Cheating ,1,1,0,0,0
+India,Jammu & Kashmir,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2009,Serious Fraud - Cheating,2. Cheating ,4,0,0,0,0
+India,Kerala,2009,Serious Fraud - Cheating,2. Cheating ,8,NULL,NULL,NULL,NULL
+India,Madhya Pradesh,2009,Serious Fraud - Cheating,2. Cheating ,10,0,0,0,0
+India,Maharashtra,2009,Serious Fraud - Cheating,2. Cheating ,57,3,2,1,1
+India,Manipur,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2009,Serious Fraud - Cheating,2. Cheating ,33,0,0,0,0
+India,Odisha,2009,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2009,Serious Fraud - Cheating,2. Cheating ,4,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2009,Serious Fraud - Cheating,2. Cheating ,25,4,1,0,0
+India,Uttar Pradesh,2009,Serious Fraud - Cheating,2. Cheating ,2,NULL,NULL,NULL,NULL
+India,West Bengal,2009,Serious Fraud - Cheating,2. Cheating ,13,1,0,0,0
+India,Andhra Pradesh,2010,Serious Fraud - Cheating,2. Cheating ,14,0,0,0,0
+India,Arunachal Pradesh,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Bihar,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Chhattisgarh,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Delhi,2010,Serious Fraud - Cheating,2. Cheating ,48,23,12,0,NULL
+India,Goa,2010,Serious Fraud - Cheating,2. Cheating ,1,NULL,NULL,NULL,NULL
+India,Gujarat,2010,Serious Fraud - Cheating,2. Cheating ,10,0,1,1,1
+India,Haryana,2010,Serious Fraud - Cheating,2. Cheating ,3,NULL,NULL,NULL,1
+India,Himachal Pradesh,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jammu & Kashmir,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Jharkhand,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Karnataka,2010,Serious Fraud - Cheating,2. Cheating ,3131,3,0,0,0
+India,Kerala,2010,Serious Fraud - Cheating,2. Cheating ,4,0,0,1,0
+India,Madhya Pradesh,2010,Serious Fraud - Cheating,2. Cheating ,NULL,NULL,1,NULL,NULL
+India,Maharashtra,2010,Serious Fraud - Cheating,2. Cheating ,75,5,1,0,1
+India,Manipur,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Meghalaya,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Nagaland,2010,Serious Fraud - Cheating,2. Cheating ,14,0,0,0,0
+India,Odisha,2010,Serious Fraud - Cheating,2. Cheating ,0,0,0,0,0
+India,Punjab,2010,Serious Fraud - Cheating,2. Cheating ,5,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2010,Serious Fraud - Cheating,2. Cheating ,5,1,0,0,0
+India,Uttar Pradesh,2010,Serious Fraud - Cheating,2. Cheating ,5,0,0,0,0
+India,West Bengal,2010,Serious Fraud - Cheating,2. Cheating ,16,9,1,1,0
+India,Andhra Pradesh,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Arunachal Pradesh,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,NULL,NULL,NULL,NULL
+India,Goa,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,Gujarat,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,1,0,0,0
+India,Haryana,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jharkhand,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,13,0,0,0,0
+India,Maharashtra,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,0,0,0,1
+India,Meghalaya,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,10,0,0,0,0
+India,Odisha,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,205,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,NULL,NULL,NULL,NULL
+India,Uttarakhand,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,West Bengal,2001,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Andhra Pradesh,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Bihar,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Chhattisgarh,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,10,0,0,0,0
+India,Daman & Diu,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Gujarat,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,1,0,2,1
+India,Haryana,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Madhya Pradesh,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Maharashtra,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,16,3,2,0,2
+India,Meghalaya,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,0,0
+India,Odisha,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,79,0,0,0,0
+India,Tamil Nadu,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,West Bengal,2002,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Andhra Pradesh,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,2,3,0,0
+India,Arunachal Pradesh,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Dadra & Nagar Haveli,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,Daman & Diu,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,5,0,0,0,0
+India,Goa,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Gujarat,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,1,1,0,0
+India,Haryana,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jharkhand,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,1,0
+India,Maharashtra,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,23,3,1,0,0
+India,Meghalaya,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,0,0,0,0
+India,Nagaland,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Odisha,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Sikkim,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,West Bengal,2003,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Andhra Pradesh,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Arunachal Pradesh,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Dadra & Nagar Haveli,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,5,0,0,1,NULL
+India,Delhi,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,Gujarat,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,5,0,1,0,0
+India,Himachal Pradesh,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,0,0
+India,Madhya Pradesh,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Maharashtra,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,12,1,1,2,1
+India,Manipur,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Mizoram,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Odisha,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,0,1,0,0
+India,Sikkim,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,West Bengal,2004,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Andaman & Nicobar Islands,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,1,NULL,NULL,NULL
+India,Andhra Pradesh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Arunachal Pradesh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Gujarat,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,0,0,0,0
+India,Haryana,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,0,0,0,0
+India,Kerala,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Madhya Pradesh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Maharashtra,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,1,0,1,1
+India,Manipur,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Mizoram,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,2,1,0,0
+India,Odisha,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,0,0
+India,Uttar Pradesh,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,West Bengal,2005,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,0,0
+India,Andhra Pradesh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Arunachal Pradesh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,NULL,NULL,NULL,NULL
+India,Chandigarh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Gujarat,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,16,0,0,0,0
+India,Himachal Pradesh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jharkhand,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,5,0,0,0,0
+India,Karnataka,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Madhya Pradesh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Maharashtra,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,23,NULL,4,NULL,NULL
+India,Manipur,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Mizoram,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Nagaland,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,11,0,0,0,0
+India,Odisha,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Puducherry,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Punjab,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Uttar Pradesh,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,West Bengal,2006,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Andhra Pradesh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Arunachal Pradesh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Chhattisgarh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Goa,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Gujarat,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,0,0
+India,Haryana,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,12,0,0,0,0
+India,Karnataka,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Kerala,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Madhya Pradesh,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Maharashtra,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,34,3,0,0,1
+India,Manipur,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Mizoram,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,0,0
+India,Odisha,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Puducherry,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,NULL,NULL,NULL,NULL
+India,Sikkim,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,7,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,0,0
+India,Tripura,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,West Bengal,2007,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,1,0
+India,Andhra Pradesh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,0,0,0
+India,Arunachal Pradesh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,NULL,NULL,NULL,NULL
+India,Gujarat,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,58,0,0,0,0
+India,Haryana,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,10,0,0,0,0
+India,Kerala,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,2,NULL,NULL,NULL
+India,Maharashtra,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,30,0,0,0,0
+India,Manipur,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Mizoram,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,23,0,0,0,0
+India,Nagaland,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Odisha,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Sikkim,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,NULL,1,NULL,NULL,NULL
+India,Tamil Nadu,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Uttar Pradesh,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,NULL,NULL,NULL,NULL
+India,West Bengal,2008,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Andhra Pradesh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Arunachal Pradesh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Assam,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chhattisgarh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,43,6,5,4,5
+India,Goa,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,1,0,0
+India,Gujarat,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,15,0,0,0,0
+India,Haryana,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Himachal Pradesh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Jammu & Kashmir,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Karnataka,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,0,0,0,0
+India,Kerala,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,NULL,NULL,NULL,NULL
+India,Madhya Pradesh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,16,0,0,0,0
+India,Maharashtra,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,21,2,2,1,0
+India,Manipur,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,0,0
+India,Odisha,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Tamil Nadu,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,0,1,2,0
+India,Uttar Pradesh,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,West Bengal,2009,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
+India,Andhra Pradesh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,4,3,3,15,0
+India,Arunachal Pradesh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Bihar,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Chandigarh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,1,0,0,0
+India,Chhattisgarh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Delhi,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,NULL,NULL,NULL,NULL
+India,Gujarat,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,9,0,0,0,0
+India,Himachal Pradesh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jammu & Kashmir,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Jharkhand,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,20,0,0,0
+India,Karnataka,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,461,1,1,1,0
+India,Kerala,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,6,0,0,0,0
+India,Madhya Pradesh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,Maharashtra,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,13,6,2,0,1
+India,Manipur,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Meghalaya,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Nagaland,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,10,0,0,0,0
+India,Odisha,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,0,0,0,0,0
+India,Punjab,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,2,NULL,NULL,NULL,NULL
+India,Tamil Nadu,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,9,0,0,0,0
+India,Uttar Pradesh,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,3,0,NULL,0,0
+India,West Bengal,2010,Serious Fraud - Criminal Breach of Trust,1. Criminal Breach of Trust,1,0,0,0,0
