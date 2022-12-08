@@ -38,7 +38,7 @@ def saveDataFromCamera(haar_data, fileName="cam_data"):
     # print("Data shape = ", stored_Data.shape)
 
 if __name__ == "__main__":
-    haar_data = cv2.CascadeClassifier('test/data/haarcascade_frontal_face_default.xml')
-    saveDataFromCamera(haar_data=haar_data, fileName="test/data/without_mask.npy")
+    haar_data = cv2.CascadeClassifier('data/haarcascade_frontal_face_default.xml')
+    saveDataFromCamera(haar_data=haar_data, fileName="data/without_mask.npy")
     time.sleep(10) # wait for 10 seconds for user to wear his mask
-    saveDataFromCamera(haar_data=haar_data, fileName="test/data/with_mask.npy")
+    saveDataFromCamera(haar_data=haar_data, fileName="data/with_mask.npy")
