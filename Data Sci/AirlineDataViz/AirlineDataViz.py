@@ -10,6 +10,7 @@ app = Dash(__name__)
 app.config.suppress_callback_exceptions = True
 
 # Read the airline data into pandas dataframe
+print('Loading data...')
 airline_data = pd.read_csv(
     # Airline data
     "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv",
@@ -21,6 +22,7 @@ airline_data = pd.read_csv(
         "Div2TailNum": str,
     },
 )
+print('DONE !!')
 
 
 # List of years
