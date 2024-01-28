@@ -1,0 +1,42 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.my-form > div {
+  margin: 8px;
+}
+
+.my-form > div > label {
+  font-weight: bold;
+}
+
+.my-form > div  > input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 6px;
+  background: transparent;
+  border: 1px solid #aaa;
+  width: 100%;
+  font-size: 1em;
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+.my-form > div > input:focus {
+  outline: 0;
+}
+
+.my-form > div > button {
+  background-color: coral;
+  padding: 6px 10px;
+}
