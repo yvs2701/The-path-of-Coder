@@ -1,0 +1,107 @@
+# Ignore output folders created by VS Code / Zed tasks
+# (per-file output directories used in tasks: vsc-output and zed_output)
+vsc-output/
+**/vsc-output/
+zed_output/
+**/zed_output/
+
+# VS Code workspace settings
+.vscode/*
+!.vscode/tasks.json
+.zed/*
+!.zed/settings.json
+!.zed/tasks.json
+
+# -----------------------
+# Java
+# -----------------------
+# Compiled class files
+*.class
+
+# Package / archive files
+*.jar
+*.war
+*.ear
+
+# Build folders commonly used by Java tools
+target/
+
+# IntelliJ / IDE files (optional)
+*.iml
+.idea/
+
+# -----------------------
+# C / C++
+# -----------------------
+# Object files, libraries, executables
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Debug / symbol files
+*.dSYM/
+*.dwo
+*.d
+
+# Common build directories
+build/
+bin/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.mk
+
+# -----------------------
+# Python
+# -----------------------
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and packaging
+.env/
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+
+# -----------------------
+# JavaScript / Node
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / bundler caches and outputs
+.cache/
+.next/
+.nuxt/
+.parcel-cache/
+.esbuild/
+out/
+
+# macOS
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -----------------------
+# Optional: lock / package metadata (uncomment if desired)
+package-lock.json
+yarn.lock
