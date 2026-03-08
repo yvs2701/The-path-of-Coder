@@ -1,4 +1,5 @@
 import csv
+from urllib.parse import parse_qs, urlparse
 from bs4 import BeautifulSoup, Tag
 
 def attribute_extractor(tag: Tag, attribute: str) -> str:
@@ -8,6 +9,11 @@ def text_content_extractor(tag: Tag) -> str:
     return tag.text.__str__() if tag else ''
 
 def extract_video_info(video: Tag) -> tuple[str, str, str, str]:
+    title = ''
+    channel = ''
+    video_url = ''
+    thumb_url = ''
+
     # Extract Video Title
     title_tag = video.find('a', id='video-title')
     title = attribute_extractor(title_tag, 'title') if title_tag else ''
@@ -17,17 +23,31 @@ def extract_video_info(video: Tag) -> tuple[str, str, str, str]:
     channel = text_content_extractor(channel_tag) if channel_tag else ''
 
     # Extract Video URL
-    video_url = ''
     if title_tag and title_tag.has_attr('href'):
-        href = attribute_extractor(title_tag, 'href')
-        # YouTube hrefs are typically relative (e.g., /watch?v=...)
-        video_url = f"https://www.youtube.com{href}" if href.startswith('/') else href
+        link_href = attribute_extractor(title_tag, 'href')
+
+        parsed_url = urlparse(link_href)
+        query_params = parse_qs(parsed_url.query)
+        
+        # YouTube hrefs are typically relative like: /watch?v=<VIDEO_ID>...
+        if 'v' in query_params:
+            # Reconstruct a clean URL using only the 'v' parameter if it exists
+            video_id = query_params['v'][0]
+            video_url = f"https://www.youtube.com/watch?v={video_id}"
+        else:
+            # Fallback for unexpected URL structures
+            video_url = f"https://www.youtube.com{link_href}" if link_href.startswith('/') else link_href
 
     # Extract Thumbnail Link
     img_tag = video.find('img')
-    thumb = attribute_extractor(img_tag, 'src') if img_tag else ''
+    thumb_src = attribute_extractor(img_tag, 'src') if img_tag else ''
 
-    return title, channel, video_url, thumb
+    # Match YouTube image URL structure: https://i.ytimg.com/vi/<VIDEO_ID>/...
+    if thumb_src:
+        video_id = thumb_src.split('/vi/')[1].split('/')[0] if '/vi/' in thumb_src else None
+        thumb_url = f"https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg" if video_id else thumb_src
+
+    return title, channel, video_url, thumb_url
 
 def extract_yt_liked_videos(html_file_path: str, output_csv_path: str) -> None:
     """
