@@ -28,9 +28,6 @@ on run {input, parameters}
 		-- Read the actual pixel data of the file and push it to the macOS clipboard as a raw image
 		set the clipboard to (read (latestFile as alias) as TIFF picture)
 		
-		-- Push a passive system notification confirming successful copy
-		display notification (fileName & " was copied to clipboard!") with title "Screenshot Copied"
-		
 	on error errMsg
 		-- Notify the user that an error occurred, displaying the error message directly
 		display notification errMsg with title "Screenshot Error"
